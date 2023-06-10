@@ -23,7 +23,7 @@ export const CartItem: React.FC<IPizzaCart> = (props) => {
       <div className="cart__item-img">
         <img
           className="pizza-block__image"
-          src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+          src= {props.imageUrl}
           alt="Pizza"
         />
       </div>
@@ -53,7 +53,7 @@ export const CartItem: React.FC<IPizzaCart> = (props) => {
           </svg>
         </button>
         <b>{props.count}</b>
-        <button onClick = {() => onClickPlus()}
+        <button disabled={props.count === 30} onClick = {() => onClickPlus()}
           className="button button--outline button--circle cart__item-count-plus">
           <svg
             width="10"

@@ -3,16 +3,15 @@ import { NavLink } from "react-router-dom";
 import { addItem, IPizzaCart, selectCartItemById } from "../../redux/slices/cartSlice";
 import { useAppDispatch, useAppSelector } from "../../redux/store";
 
-
 export interface IPizza {
+  category: number;
   id: string;
   imageUrl: string;
+  price: number;
+  rating: number;
+  sizes: Array<number>;
   title: string;
   types: Array<number>;
-  sizes: Array<number>;
-  price: number;
-  category: number;
-  rating: number;
   count: number;
 }
 
@@ -25,8 +24,9 @@ export const PizzaBlock: React.FC<IPizza> = (props) => {
   
   const dispatch = useAppDispatch()
   const foundPizza = useAppSelector(selectCartItemById(Number(props.id)))
-
+  
   const onPizzaAdd = () => {
+    if (foundPizza?.count === 30) return
     const item: IPizzaCart = { 
       id: props.id, 
       imageUrl: props.imageUrl, 
@@ -69,7 +69,7 @@ export const PizzaBlock: React.FC<IPizza> = (props) => {
       </div>
       <div className="pizza-block__bottom">
         <div className="pizza-block__price">от {props.price} ₽</div>
-        <button onClick = {onPizzaAdd}
+        <button disabled = {foundPizza?.count === 30} onClick = {onPizzaAdd}
           className="button button--outline button--add">
           <svg
             width="12"

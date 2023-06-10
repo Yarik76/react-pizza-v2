@@ -31,8 +31,8 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         addItem: (state, action: PayloadAction<IPizzaCart>) => {
-            const findItem = state.items.find(item => +item.id === +action.payload.id)  
-            if (findItem && findItem.count) {
+            const findItem = state.items.find(item => (+item.id) === +action.payload.id)  
+            if (findItem && findItem.count < 30) {
                 findItem.count++
             } else {
                 state.items.push(action.payload)
