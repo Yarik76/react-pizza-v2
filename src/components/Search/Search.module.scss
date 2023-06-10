@@ -1,0 +1,52 @@
+@import '../../scss/variables';
+
+.root {
+    position: relative;
+    overflow: hidden;
+    &:focus-within {
+        .input {
+            border: 1px solid rgb(0,0,0,0.7);
+            padding: 12px 35px 12px 45px;
+        }
+        
+        .searchIcon {
+            opacity: 0.7;
+        }
+    }  
+    
+}
+.searchIcon {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.15s ease-in-out;
+}
+.clearIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%; transform: translateY(-50%);
+    right: 10px;
+    opacity: 0.7;
+    transition: 0.15s;
+    cursor: pointer;
+    &:hover {
+        color: $orange;
+    }
+}
+.input {
+    border: 1px solid rgb(0,0,0,0.1);
+    padding: 12px 35px 12px 15px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    overflow: hidden;
+}
+
+

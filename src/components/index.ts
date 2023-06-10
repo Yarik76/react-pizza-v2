@@ -1,0 +1,11 @@
+export * from './PizzaBlock/Skeleton'           //реэкспорт всего, исключая то, что по умолчанию (поэтому перед компонентой export)
+export * from './PizzaBlock/PizzaBlock'
+export * from './Header'
+export * from './Categories'
+export * from './Pages/Cart/CartItem/CartItem'
+export * from './Pages/Cart/EmptyCart/EmptyCart'
+export * from './Search/Search'
+export * from './Pagination/Pagination'
+export * from './Sort'
+export * from './PizzaRating/PizzaRating'
+export * from './Search/Search'

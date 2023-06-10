@@ -1,0 +1,58 @@
+@import '../../scss/variables';
+
+.root {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .li {
+            width: 40px;
+            height: 40px;
+            border: 1px solid $orange;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 40px;
+            color: $orange;
+            user-select: none;
+            cursor: pointer;
+            &:hover {
+                background-color: $orange;
+                opacity: 0.5;
+                color:white;
+            }
+        }
+        .active {
+            width: 40px;
+            height: 40px;
+            border: 1px solid $orange;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 40px;
+            color: $orange;
+            user-select: none;
+            background-color: $orange;
+            color:white;
+          
+        }
+    }
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    color: $orange;
+    border: 1px solid $orange;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $orange;
+        color:white;
+        opacity: 0.5;
+    }
+}
+
