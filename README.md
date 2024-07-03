@@ -1,4 +1,23 @@
-Thank's to Archakov Blog, https://www.youtube.com/watch?v=_UywBskWJ7Q&list=PL0FGkDGJQjJG9eI85xM1_iLIf6BcEdaNl
+# Thank's to Archakov Blog, https://www.youtube.com/watch?v=_UywBskWJ7Q&list=PL0FGkDGJQjJG9eI85xM1_iLIf6BcEdaNl
+
+# About
+Web site for buying pizzas
+
+## Images
+
+### Main page (no pizza photos, because site that provides them doesn't respond no more, but it worked)
+![Снимок экрана 2024-07-03 161145](https://github.com/Yarik7610/react-pizza-v2/assets/108609450/c58de9e1-2634-40ee-ae16-4596a601afa4)
+
+### Cart 
+![Снимок экрана 2024-07-03 161343](https://github.com/Yarik7610/react-pizza-v2/assets/108609450/fea85e74-90ef-4fc3-91a2-ca1ee2c33b42)
+
+## Functionality:
+1. Pagination
+2. Pizza parametrs
+3. Finding pizza
+4. Filters
+5. Sorting
+6. Cart with auto counting the final price, adding and removing pizzas from cart
 
 # Getting Started with Create React App
 
