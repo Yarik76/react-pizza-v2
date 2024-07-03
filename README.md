@@ -3,12 +3,12 @@
 # About
 Web site for buying pizzas
 
-## Images
+## Images:
 
-### Main page (no pizza photos, because site that provides them doesn't respond no more, but it worked)
+### Main page (no pizza photos, because site that provides them doesn't respond no more, but it worked):
 ![Снимок экрана 2024-07-03 161145](https://github.com/Yarik7610/react-pizza-v2/assets/108609450/c58de9e1-2634-40ee-ae16-4596a601afa4)
 
-### Cart 
+### Cart page:
 ![Снимок экрана 2024-07-03 161343](https://github.com/Yarik7610/react-pizza-v2/assets/108609450/fea85e74-90ef-4fc3-91a2-ca1ee2c33b42)
 
 ## Functionality:
